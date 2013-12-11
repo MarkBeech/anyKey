@@ -10,12 +10,17 @@ namespace anyKey
     {
         static void Main(string[] args)
         {
-            while (true)
+            ConsoleKeyInfo theKey = Console.ReadKey();
+            ConsoleKeyInfo anyKey = Console.ReadKey();
+            Console.Clear();
+            while (anyKey != theKey)
             {
                 Console.WriteLine("Press the any key to continue");
-                Console.ReadKey();
+                anyKey = Console.ReadKey();
+                Console.WriteLine(" ");
                 Console.WriteLine("That was not the any key.");
             }
+            Console.WriteLine("That was the any key.");
             Console.ReadLine();
         }
     }
