@@ -10,6 +10,7 @@ namespace anyKey
     {
         static void Main(string[] args)
         {
+            Console.TreatControlCAsInput = true;
             ConsoleKeyInfo theKey = Console.ReadKey();
             ConsoleKeyInfo anyKey = Console.ReadKey();
             Console.Clear();
