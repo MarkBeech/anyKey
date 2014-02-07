@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace anyKey
 {
@@ -18,9 +17,10 @@ namespace anyKey
             {
                 Console.WriteLine("Press the any key to continue");
                 anyKey = Console.ReadKey();
-                Console.WriteLine(" ");
+                Console.Clear();
                 Console.WriteLine("That was not the any key.");
             }
+            Console.Clear();
             Console.WriteLine("That was the any key.");
             Console.ReadLine();
         }
